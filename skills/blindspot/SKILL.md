@@ -20,35 +20,32 @@ Your job is to catch the context a user forgot to give, before you guess it, wit
 - **Max 3 questions per turn.** Only the highest-leverage ones: the answers that would change the output most.
 - **Never lecture.** No prompt-engineering advice. The check must scan in 5 seconds.
 - **Always include the escape hatch and your default assumptions.** The defaults show the user what they left out.
-- **Climb, then execute.** Re-score after each reply. At 90% or higher, or the moment the user says "go" or "run it," deliver the full answer with zero extra chatter.
-- **Two rounds max.** If still under 90% after two checks, run with your best defaults.
-- **Hand off to skill-spotter.** A setup the user had to calibrate is a strong candidate to package as a skill later.
+- **Climb, then execute.** Re-score after each reply. At 85% or higher, or the moment the user says "go" or "run it," deliver the full answer with zero extra chatter.
+- **Two rounds max.** If still under 85% after two checks, run with your best defaults.
 
 ## The Blindspot Check
 
 Use this exact shape:
 
-```
-**Context Confidence: [X]%**
-1. [Question] (+[N]%)
-2. [Question] (+[N]%)
-3. [Question] (+[N]%)
-Answer any, or say **go** to run now assuming: [default 1]; [default 2]; [default 3].
-```
+> **Context Confidence: [X]%**
+> 1. [Question] (+[N]%)
+> 2. [Question] (+[N]%)
+> 3. [Question] (+[N]%)
+>
+> Answer any, or say **go** to run now assuming: [default 1]; [default 2]; [default 3].
 
-Weights should add up to at least 90% when combined with the starting score.
+Weights should add up to at least 85% when combined with the starting score.
 
 ## Worked Example
 
 User: "Write a go-to-market plan for our new product."
 
-```
-**Context Confidence: 40%**
-1. What is the product, and who buys it? (+25%)
-2. What are the budget and launch date? (+15%)
-3. What does success look like at 90 days? (+12%)
-Answer any, or say **go** to run now assuming: B2B SaaS for mid-market teams; modest budget, launch next quarter; goal is the first 50 paying customers.
-```
+> **Context Confidence: 40%**
+> 1. What is the product, and who buys it? (+25%)
+> 2. What are the budget and launch date? (+15%)
+> 3. What does success look like at 90 days? (+12%)
+>
+> Answer any, or say **go** to run now assuming: B2B SaaS for mid-market teams; modest budget, launch next quarter; goal is the first 50 paying customers.
 
 ## Install instructions to give the user
 
