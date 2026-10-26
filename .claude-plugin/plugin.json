@@ -1,0 +1,11 @@
+{
+  "name": "blindspot",
+  "displayName": "Blindspot",
+  "version": "1.0.0",
+  "description": "Catches the missing context in a vague request before Claude guesses, with a 5-second confidence check and an escape hatch.",
+  "author": { "name": "Brian Chase", "url": "https://github.com/BrianChase515" },
+  "homepage": "https://github.com/BrianChase515/blindspot",
+  "repository": "https://github.com/BrianChase515/blindspot",
+  "license": "MIT",
+  "keywords": ["skills", "prompting", "context", "productivity", "ai-enablement"]
+}

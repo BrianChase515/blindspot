@@ -1,0 +1,12 @@
+{
+  "name": "blindspot",
+  "description": "Blindspot, a Claude skill by Brian Chase.",
+  "owner": { "name": "Brian Chase", "url": "https://github.com/BrianChase515" },
+  "plugins": [
+    {
+      "name": "blindspot",
+      "source": "./",
+      "description": "Catches the missing context in a vague request before Claude guesses."
+    }
+  ]
+}
