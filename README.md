@@ -36,7 +36,7 @@ Once Blindspot helps you dial in a task, [Skill Spotter](https://github.com/Bria
 ## Install
 
 **Claude apps (claude.ai, desktop, mobile)**
-1. Download [`blindspot.zip`](https://github.com/BrianChase515/blindspot/raw/main/blindspot.zip).
+1. Download [`blindspot.zip`](https://github.com/BrianChase515/blindspot/raw/downloads/blindspot.zip).
 2. In Claude, open Customize > Skills and upload the zip.
 
 **Claude Code**
